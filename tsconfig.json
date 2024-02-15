@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+	  "module": "CommonJS",
+	  "target": "ES2022",
+	  "lib": [
+		"ES2022"
+	  ],
+	  "sourceMap": true,
+	  "outDir": "dist",  // Specifies the output directory for compiled files
+	  "rootDir": "src",
+	  "strict": true,  // Enable all strict type-checking options
+	  "esModuleInterop": true,  // Enables emit interoperability between CommonJS and ES Modules
+	  "skipLibCheck": true,  // Skip type checking of all declaration files (*.d.ts)
+	  "forceConsistentCasingInFileNames": true,  // Disallow inconsistently-cased references to the same file.
+	  "incremental": true,  // Enable incremental compilation by creating a .tsbuildinfo file
+	  "resolveJsonModule": true,  // Allow importing .json files
+	  "moduleResolution": "node",  // Specify module resolution strategy: 'node' for Node.js/io.js style resolution
+	  "noEmitOnError": true,  // Do not emit outputs if any type checking errors were reported
+	  /* Additional Checks */
+	  "noImplicitReturns": true,  // Report error when not all code paths in function return a value.
+	  "noFallthroughCasesInSwitch": true,  // Report errors for fallthrough cases in switch statement.
+	  "noUnusedParameters": true  // Report errors on unused parameters.
+	},
+	"exclude": [
+	  "node_modules",  // Exclude node_modules from the compilation
+	  "dist",  // Exclude the dist directory to prevent it from being considered in the compilation process
+	  "**/*.test.ts",  // Exclude test files if not needed for the build
+	  "**/*.spec.ts"
+	],
+	"include": [
+	  "src/**/*.ts"  // Explicitly include all TypeScript files in the src directory
+	]
+  }
+  
